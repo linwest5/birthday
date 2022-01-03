@@ -88,7 +88,7 @@
         @include mobile {
             @include flexCenter(center, center);
             flex-direction: column-reverse;
-            padding: 0 9% 12% ;
+            padding: 6% 12% ;
         }
         .text {
             width: 60%;
@@ -115,13 +115,17 @@
     .button {
         @include flexCenter(center, center);
         background-color: #feecf2;
-        padding-bottom: 8%;
+        padding: 8% 0;
+        @include mobile {
+            padding-bottom: 8%;
+        }
         button {
             padding: 12px 28px;
             border-radius: 20px;
             border: none;
             background-color: #fccddc;
             box-shadow: 0 0 12px rgba(0,0,0,0.1);
+            
         }
     }
 }
@@ -145,21 +149,33 @@
         flex-direction: column;
         width: 100%;
         height: 100%;
-        padding: 40% 8%;
+        padding: 0;
+        @include mobile {
+            padding: 40% 8%;
+        }
     }
     h2 {
         color: #fff;
-        font-size: 10vw;
+        font-size: 6vw;
+        @include mobile {
+            font-size: 10vw;
+        }
     }
     p {
-        font-size: 12vw;
+        font-size: 8vw;
         // transition: 1s;
         animation: text-move 2s;
         line-height: 140%;
+        @include mobile {
+            font-size: 12vw;
+        }
     }
     img {
-        width: 60%;
+        width: 20%;
         animation: text-move 2s;
+        @include mobile {
+            width: 60%;
+        }
         // opacity: 0;
     }
     .close {
@@ -193,3 +209,38 @@
         transform: translateY(0px);
     }
 }
+
+// slider
+.wrapper{
+width:100%;
+padding-top: 20px;
+text-align:center;
+h2{
+    font-family:sans-serif;
+    color:#303036;
+    }
+}
+
+.carousel{
+width:90%;
+margin:0px auto;
+}
+.slick-slide{
+margin:10px;
+}
+.slick-slide img{
+width:100%;
+border: 2px solid #fff;
+}
+
+.img_01 {
+    opacity: 0;
+}
+.imgAnimation {
+    opacity: 1;
+    -webkit-transform: translate(0px);
+    transform: translate(0px);
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
