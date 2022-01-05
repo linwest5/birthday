@@ -284,6 +284,54 @@ table {
           box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
+.main_content .area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 8% 0;
+  background: linear-gradient(22deg, rgba(177, 239, 227, 0.45), rgba(177, 239, 227, 0.45) 30%, #feecf2 85%);
+}
+
+.main_content .area h2 {
+  font-size: 6vw;
+  padding: 4%;
+  font-weight: 600;
+}
+
+.main_content .area .wrapper {
+  width: 90%;
+  margin: 20px 35px 0;
+}
+
+.main_content .area #photos__container {
+  position: relative;
+  width: 100vw;
+}
+
+.main_content .area .photo {
+  width: 161px;
+  /* width: 18%; */
+  height: auto;
+  position: absolute;
+}
+
+.main_content .area .photo img {
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+}
+
 .black-bg {
   position: fixed;
   top: 0;
