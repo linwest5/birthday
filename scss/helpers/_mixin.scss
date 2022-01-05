@@ -21,7 +21,7 @@
 // }
 
 @mixin mobile{
-    @media(max-width:376px){
+    @media(max-width:425px){
       @content;
     }
 }
