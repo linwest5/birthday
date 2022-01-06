@@ -120,7 +120,8 @@ let play = document.querySelector('.play')
 let myAudio = document.querySelectorAll('.myAudio')
 
 play.addEventListener('click',function(){
-  let num = getRandom(0,1)
+  let num = getRandom(0,4)
+  console.log(num);
   myAudio[num].play();
 
   play.style.animation = 'playAnimation 1.5s ease-in-out infinite'
