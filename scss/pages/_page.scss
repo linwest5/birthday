@@ -34,7 +34,7 @@
                 line-height: 140%;
                 color: #303036;
                 @include mobile {
-                    font-size: 8vw;
+                    font-size: 7vw;
                 }
             }
         }
@@ -301,6 +301,7 @@ text-align:center;
 h2{
     font-family:sans-serif;
     color:#303036;
+    font-size: 6vw;
     }
 }
 
@@ -314,9 +315,9 @@ margin:10px;
 .slick-slide img{
     width:100%;
     border: 2px solid #fff;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
-    object-position: center;
+    object-position: center top;
 }
 
 .img_01 {

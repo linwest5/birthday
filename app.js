@@ -66,15 +66,16 @@ $(document).ready(function () {
   });
 });
 
-const text2 = ["生日快樂!"];
+const text2 = [" 生日快樂!!"," 太U了~~"];
 let count = 0;
 let index = 0;
 let currentText = "";
 let letter = "";
 
 (function type() {
-  if (count === text.length) {
+  if (count === text2.length) {
     count = 0;
+    console.log('qq');
   }
 
   //將text[count]擷取出,存入letter
