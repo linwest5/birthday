@@ -116,3 +116,15 @@ function imgMove() {
   }
 }
 
+let play = document.querySelector('.play')
+let myAudio = document.querySelectorAll('.myAudio')
+
+play.addEventListener('click',function(){
+  let num = getRandom(0,1)
+  myAudio[num].play();
+
+  play.style.animation = 'playAnimation 1.5s ease-in-out infinite'
+  setTimeout(function(){
+    play.style.animation = 'playAnimation2 1.5s ease-in-out infinite'
+  },1500)
+})
